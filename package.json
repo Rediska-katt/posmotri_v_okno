@@ -1,0 +1,19 @@
+{
+  "name": "posmotri_v_okno",
+  "version": "1.0.0",
+  "description": "Alt-H1\r ------  \r *Выполнена проектная работа 2-го спринта.*  \r Добавлены стили в соответствии с макетом и чек-листом.  \r Посмотреть работу можно тут:  \r []",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Привет!'",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint \"./**/*.css\"",
+    "lintfix": "stylelint './**/*.css' --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^3.0.3",
+    "stylelint": "^15.11.0"
+  }
+}
