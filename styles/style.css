@@ -62,10 +62,16 @@ ol {
 }
 
 .result__video {
+  padding-bottom: 1px;
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.result__video:focus {
+  outline: 1px solid #fff;
+  outline-offset: 0;
 }
 
 .search-form {
@@ -112,6 +118,10 @@ ol {
   border-bottom: 1px solid #fff;
   background-color: inherit;
   font: inherit;
+  color: #fff;
+}
+
+.search-form__textfield::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -194,6 +204,8 @@ ol {
   background-color: transparent;
   cursor: pointer;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
   line-height: normal;
 }
 
@@ -212,7 +224,7 @@ ol {
 
 .title {
   color: #fff;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -255,7 +267,6 @@ ol {
 }
 
 .content__card-link:focus-visible {
-  background: inherit;
   outline: 1px solid #fff;
   outline-offset: 0;
 }
@@ -285,7 +296,7 @@ ol {
 
 .content__video-card-title {
   padding-bottom: 6px;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -298,7 +309,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -308,9 +319,8 @@ ol {
 .content__video-card-thumbnail {
   min-inline-size: 194px;
   block-size: 103px;
-  background-size: content;
-  background-position: cover;
-  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
 }
 
 .more-button {
